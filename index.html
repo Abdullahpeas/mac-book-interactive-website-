@@ -13,102 +13,106 @@
 
 <body>
 
+
     <main>
-
-        <main>
-            <div class="container">
-                <div class="row mt-4">
-                    <div class="col-6">
-                        <img width="100%" src="images/mac.png" alt="MacBook">
-                    </div>
-                    <div id="parent" class="col-6">
-                        <h1>Customize your Blue 24-inc iMac with apple Mi chip</h1>
-                        <p>Mac was designed to minimize its impact on the environment. All of the virgin wood fiber in
-                            its packaging comes exclusively from responsibly managed forests. The rare earth elements in
-                            the speakers, fan motor, and power connector magnets are completely recycled</p>
-                        <div class="memory">
-                            <h4>Memory</h4>
-                            <div class="d-flex">
-                                <div class="btn">
-                                    <button id="8gb-memory" class="btn btn-outline-secondary">8GB unified
-                                        memory</button>
-                                </div>
-                                <div class="btn">
-                                    <button id="16gb-memory" class="btn btn-outline-secondary">16GB unified
-                                        memory</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="storage pt-4">
-                            <h4>Storage</h4>
-                            <div class="d-flex">
-                                <div class="btn">
-                                    <button id="256gb-ssd" class="btn btn-outline-secondary">256GB SSD storage</button>
-                                </div>
-                                <div class="btn">
-                                    <button id="512gb-ssd" class="btn btn-outline-secondary">512GB SSD storage</button>
-                                </div>
-                                <div class="btn">
-                                    <button id="1tb-ssd" class="btn btn-outline-secondary">1TB SSD storage</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="Delibery pt-4">
-                            <h4>Choose your delivery option</h4>
-                            <div class="d-flex">
-                                <div class="btn">
-                                    <button id="delivery-Free" class="btn btn-outline-secondary">Friday, Aug 25 FREE
-                                        prime
-                                        Delivery</button>
-                                </div>
-                                <div class="btn">
-                                    <button id="delivery-paid" class="btn btn-outline-secondary">Friday, Aug 21 FREE
-                                        Delivery charge
-                                        $20</button>
-                                </div>
-                            </div>
-                        </div>
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                    <th>Best Price</th>
-                                    <th>$<span id="best-price">1299</span></th>
-                                </tr>
-                                <tr>
-                                <tr>
-                                    <th>Extra memory Cost</th>
-                                    <th>$<span id="memory-cost">0</span></th>
-                                </tr>
-                                <tr>
-                                    <th>Extra storage Cost</th>
-                                    <th>$<span id="storage-cost">0</span></th>
-                                </tr>
-                                <tr class="btm-line">
-                                    <th>Delivery Cost</th>
-                                    <th>$<span id="delivery-cost">0</span></th>
-                                </tr>
-                                <tr>
-                                    <th>Total Price</th>
-                                    <th>$<span id="total-cost">1299</span></th>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div>
-                            <h4>Add Promo code</h4>
-                            <div>
-                                <input id="cpn-input" type="text">
-                                <div id="cpn-button" class="btn btn-dark">Apply</div>
-                            </div>
-                        </div>
-                    </div>
-                    <h1 class="text-center">Total: $<span id="avg-total">1299</span></h1>
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col-6">
+                    <img class="img-fluid" src="images/mac.png" alt="MacBook">
                 </div>
+                <div class="col-6">
+                    <h1>Customize your Blue 24-inc iMac with apple Mi chip</h1>
+                    <p>Mac was designed to minimize its impact on the environment. All of the virgin wood fiber in
+                        its packaging comes exclusively from responsibly managed forests. The rare earth elements in
+                        the speakers, fan motor, and power connector magnets are completely recycled</p>
+
+                    <!-- memory -->
+                    <div>
+                        <h4>Memory</h4>
+                        <div class="d-flex">
+                            <div class="btn">
+                                <button id="8gb-memory" class="btn btn-outline-secondary">8GB unified
+                                    memory</button>
+                            </div>
+                            <div class="btn">
+                                <button id="16gb-memory" class="btn btn-outline-secondary">16GB unified
+                                    memory</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- storage -->
+
+                    <div class="pt-4">
+                        <h4>Storage</h4>
+                        <div class="d-flex">
+                            <div class="btn">
+                                <button id="256gb-ssd" class="btn btn-outline-secondary">256GB SSD storage</button>
+                            </div>
+                            <div class="btn">
+                                <button id="512gb-ssd" class="btn btn-outline-secondary">512GB SSD storage</button>
+                            </div>
+                            <div class="btn">
+                                <button id="1tb-ssd" class="btn btn-outline-secondary">1TB SSD storage</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- delivery -->
+
+                    <div class="pt-4">
+                        <h4>Choose your delivery option</h4>
+                        <div class="d-flex">
+                            <div class="btn">
+                                <button id="delivery-Free" class="btn btn-outline-secondary">Friday, Aug 25 FREE
+                                    prime
+                                    Delivery</button>
+                            </div>
+                            <div class="btn">
+                                <button id="delivery-paid" class="btn btn-outline-secondary">Friday, Aug 21 FREE
+                                    Delivery charge
+                                    $20</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>Best Price</th>
+                                <th>$<span id="best-price">1299</span></th>
+                            </tr>
+                            <tr>
+                            <tr>
+                                <th>Extra memory Cost</th>
+                                <th>$<span id="memory-cost">0</span></th>
+                            </tr>
+                            <tr>
+                                <th>Extra storage Cost</th>
+                                <th>$<span id="storage-cost">0</span></th>
+                            </tr>
+                            <tr>
+                                <th>Delivery Cost</th>
+                                <th>$<span id="delivery-cost">0</span></th>
+                            </tr>
+                            <tr>
+                                <th>Total Price</th>
+                                <th>$<span id="total-cost">1299</span></th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div>
+                        <h4>Add Promo code</h4>
+                        <div>
+                            <input id="cpn-input" type="text">
+                            <div id="cpn-button" class="btn btn-dark">Apply</div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="text-center">Total: $<span id="avg-total">1299</span></h1>
             </div>
-        </main>
-
-
-
+        </div>
     </main>
+
 
 
     <script src="js/app.js"></script>

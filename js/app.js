@@ -10,7 +10,7 @@ document.getElementById('16gb-memory').addEventListener('click', function () {
 document.getElementById('8gb-memory').addEventListener('click', function () {
     memoryValue(0)
 })
-//
+/* storage */
 function storageValue(total) {
     const storageCost = document.getElementById('storage-cost');
     storageCost.innerText = total;
@@ -25,7 +25,7 @@ document.getElementById('512gb-ssd').addEventListener('click', function () {
 document.getElementById('256gb-ssd').addEventListener('click', function () {
     storageValue(0)
 })
-//
+/* delivery */
 function deliveryValue(total) {
     const deliveryCost = document.getElementById('delivery-cost');
     deliveryCost.innerText = total;
@@ -51,7 +51,6 @@ function totalUpdate() {
     const memoryPriceCost = parseInt(memoryCost.innerText);
     const totalSum = storagePriceCost + deliveryPriceCost + memoryPriceCost;
     totalCost.innerText = totalText + totalSum;
-
     avgTotal.innerText = totalText + totalSum;
 
 };
@@ -66,5 +65,4 @@ document.getElementById('cpn-button').addEventListener('click', function () {
         avgTotal.innerText = totalCost.innerText - discount;
     }
     cpnInput.value = '';
-})
-
+});
