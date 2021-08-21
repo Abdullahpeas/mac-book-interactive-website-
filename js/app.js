@@ -1,48 +1,48 @@
-function memoryCall(total) {
+function memoryValue(total) {
     const memoryCost = document.getElementById('memory-cost');
     memoryCost.innerText = total;
-    addAll()
+    totalUpdate()
 }
 
 document.getElementById('16gb-memory').addEventListener('click', function () {
-    memoryCall(180)
+    memoryValue(180)
 })
 document.getElementById('8gb-memory').addEventListener('click', function () {
-    memoryCall(0)
+    memoryValue(0)
 })
 //
-function storageCall(total) {
+function storageValue(total) {
     const storageCost = document.getElementById('storage-cost');
     storageCost.innerText = total;
-    addAll()
+    totalUpdate()
 }
 document.getElementById('1tb-ssd').addEventListener('click', function () {
-    storageCall(180)
+    storageValue(180)
 })
-document.getElementById('512bg-ssd').addEventListener('click', function () {
-    storageCall(100)
+document.getElementById('512gb-ssd').addEventListener('click', function () {
+    storageValue(100)
 })
 document.getElementById('256gb-ssd').addEventListener('click', function () {
-    storageCall(0)
+    storageValue(0)
 })
 //
-function deliveryCall(total) {
+function deliveryValue(total) {
     const deliveryCost = document.getElementById('delivery-cost');
     deliveryCost.innerText = total;
-    addAll()
+    totalUpdate()
 }
 document.getElementById('delivery-paid').addEventListener('click', function () {
-    deliveryCall(20)
+    deliveryValue(20)
 })
 document.getElementById('delivery-Free').addEventListener('click', function () {
-    deliveryCall(0)
+    deliveryValue(0)
 })
 const totalCost = document.getElementById('total-cost');
 const totalText = parseInt(totalCost.innerText);
 
 const avgTotal = document.getElementById('avg-total');
 const avgTotalText = parseInt('avgTotal.innerText')
-function addAll() {
+function totalUpdate() {
     const storageCost = document.getElementById('storage-cost');
     const storagePriceCost = parseInt(storageCost.innerText);
     const deliveryCose = document.getElementById('delivery-cost');
@@ -52,14 +52,11 @@ function addAll() {
     const totalSum = storagePriceCost + deliveryPriceCost + memoryPriceCost;
     totalCost.innerText = totalText + totalSum;
 
-
     avgTotal.innerText = totalText + totalSum;
 
-
 };
-
-
-document.getElementById('cpn-apply').addEventListener('click', function () {
+/* cuppon code */
+document.getElementById('cpn-button').addEventListener('click', function () {
     const cpnInput = document.getElementById('cpn-input');
     const cpnInputValue = cpnInput.value;
 
@@ -67,7 +64,6 @@ document.getElementById('cpn-apply').addEventListener('click', function () {
         const discount = (totalCost.innerText / 100) * 20;
 
         avgTotal.innerText = totalCost.innerText - discount;
-
     }
     cpnInput.value = '';
 })
